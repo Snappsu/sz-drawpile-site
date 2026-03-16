@@ -12,8 +12,12 @@
 	<meta content="#00B8D8" data-react-helmet="true" name="theme-color">
 	<!-- This meta tag allows the "Add" button in Drawpile's join dialog to find the list server -->
 	<meta name="drawpile:list-server" content="https://dp.sniddy.zone/" />
-	<link rel="stylesheet" href="/css/global.css">
-	<link rel="stylesheet" href="/css/fonts.css">
+	<!-- preloading -->
+	<link rel="preload" href="/css/global.css" as="style">
+	<link rel="preload" href="/css/fonts.css" as="style">
+	<link rel="preload" href="/js/SessionList.js" as="script">
+	<link rel="preload" href="/img/sniddy-zone-drawpile-icon-border.png" as="image">
+	<link rel="preload" href="bg.jpg" as="image">
 
 	<script src="/js/SessionList.js"></script>
 </head>
@@ -30,7 +34,7 @@
 		<div id="sidebar">
 
 
-			<img id="site-logo" src="https://cdn.snapps.dev/sniddy-zone/img/sniddy-zone-drawpile-icon-border.png"></img>
+			<img id="site-logo" src="/img/sniddy-zone-drawpile-icon-border.png"></img>
 
 			<h1>welcome!</h1>
 			<p>this is an <span class="red">adult-oriented</span> <a href="https://drawpile.net/">drawpile</a> server
