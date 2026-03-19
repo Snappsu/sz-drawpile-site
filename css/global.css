@@ -1,13 +1,8 @@
 :root {
-
 	--green: #7cf010;
-
 	--red: #ec6031;
-
 	--bg-col: #202122;
 	--fg-col: #eee;
-
-
 }
 
 .red {
@@ -58,7 +53,7 @@ body {
 	background-size:100px 100px, 100px 100px,contain;
 	width: 500px;
 	height: 100%;
-	overflow: scroll;
+	overflow: auto;
 	grid-area: 1 / 1 / 2 / 2;
 	display: flex;
 	flex-direction: column;
